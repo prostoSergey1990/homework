@@ -1,0 +1,13 @@
+duration = int(input('Введите количество секунд '))
+days = duration // (60*60*24)
+hours = (duration % (60*60*24)) // (60*60)
+minutes = ((duration % (60*60*24)) % (60*60)) // 60
+seconds = ((duration % (60*60*24)) % (60*60)) % 60
+if days > 0:
+    print(f'{days}дн:{hours}ч:{minutes}мин:{seconds}сек')
+elif hours > 0:
+    print(f'{hours}ч:{minutes}мин:{seconds}сек')
+elif minutes > 0:
+    print(f'{minutes}мин:{seconds}сек')
+else:
+    print(f'{seconds}сек')
