@@ -1,0 +1,12 @@
+num = input("Нажмите ENTER для запуска программы : ")
+numbs = {11,12,13,14}
+for num in range(100):
+    num = num + 1
+    if num in numbs:
+        print(num, "процентов")
+    elif num % 10 == 1:
+        print(num, "процент")
+    elif 1 < num % 10 < 5:
+        print(num, "процента")
+    else:
+        print(num, "процентов")
